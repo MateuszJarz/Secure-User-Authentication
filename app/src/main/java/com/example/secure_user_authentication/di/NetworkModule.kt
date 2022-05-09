@@ -5,6 +5,7 @@ import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFact
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import okhttp3.Cookie
@@ -20,7 +21,7 @@ import javax.inject.Singleton
 
 @ExperimentalSerializationApi
 @Module
-@InstallIn
+@InstallIn(SingletonComponent::class)
 object NetworkModule {
 
     @Provides
