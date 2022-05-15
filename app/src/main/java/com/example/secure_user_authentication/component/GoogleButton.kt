@@ -44,7 +44,7 @@ fun GoogleButton(
 
     Surface(
         modifier = modifier
-            .clickable(enabled = loadingState) {
+            .clickable(enabled = !loadingState) {
                 onClick()
             },
         shape = shape,
