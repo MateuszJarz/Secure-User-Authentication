@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.example.secure_user_authentication.R
 import com.example.secure_user_authentication.ui.theme.LoadingBlue
@@ -30,6 +31,7 @@ fun GoogleButton(
     icon: Int = R.drawable.ic_google_logo,
     shape: Shape = Shapes.medium,
     borderColor: Color = Color.LightGray,
+    borderStrokeWidth: Dp = 1.dp,
     backgroundColor: Color = MaterialTheme.colors.surface,
     progressIndicatorColor: Color = LoadingBlue,
     onClick: () -> Unit
@@ -52,10 +54,7 @@ fun GoogleButton(
         Row(
             modifier = Modifier
                 .padding(
-                    start = 12.dp,
-                    end = 16.dp,
-                    top = 12.dp,
-                    bottom = 16.dp
+                    12.dp
                 )
                 .animateContentSize(
                     animationSpec = tween(
