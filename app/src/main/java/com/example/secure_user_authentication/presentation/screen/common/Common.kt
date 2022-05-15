@@ -36,7 +36,7 @@ fun StartActivityForResult(
                     onResultReceived(tokenId)
                 }
             } else {
-                Log.d("StartActivityForResult", "BLACK SCRIM CLOSE, DIALOG CLICKED")
+                Log.d("StartActivityForResult", "BLACK SCRIM CLICKED, DIALOG CLOSE")
                 onDialogDismissed()
             }
         } catch (e: ApiException) {
@@ -117,7 +117,6 @@ fun signUp(
                 .setFilterByAuthorizedAccounts(false)
                 .build()
         )
-
         .build()
 
     oneTapClient.beginSignIn(signInRequest)
@@ -129,11 +128,11 @@ fun signUp(
                     ).build()
                 )
             } catch (e: Exception) {
-                Log.d("SignIn", " Couldn't start One Tap UI")
+                Log.d("SignUp", " Couldn't start One Tap UI ${e.message}")
             }
         }
         .addOnFailureListener {
-            Log.d("SignIn", " Signing Up... ")
+            Log.d("SignUp", " Signing Up... ")
             accountNotFound()
         }
 }
