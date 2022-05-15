@@ -84,7 +84,7 @@ fun GoogleButton(
 @Composable
 fun GoogleButtonPrev() {
     GoogleButton(
-
+        loadingState = true,
         onClick = {}
     )
 }

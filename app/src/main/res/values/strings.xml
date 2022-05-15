@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Secure-User-Authentication</string>
+    <string name="sign_in_title">Sign in to Continue</string>
+    <string name="sign_in_subtitle">If you want to access this app,\n first you need to sign it.</string>
 </resources>
