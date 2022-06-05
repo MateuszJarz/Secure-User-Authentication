@@ -1,14 +1,15 @@
 # Secure-User-Authentication
 
-<img src="https://user-images.githubusercontent.com/62247805/172056742-ee5a74a3-654f-4d16-98a5-8d585cbfee41.gif" width="250" height="550"/>
+<video src="https://user-images.githubusercontent.com/62247805/172059920-e7a244aa-a635-4c53-8d67-fd8e5aa4a765.mp4
+" width="250" height="550"/>
 
 Application based on:
--Google Auth
--Jetpack Compose
--Dagger-Hilt
--Kotlin Serialization
--Retrofit
--Ktor
--MongoDB
--Heroku
+- Google Auth
+- Jetpack Compose
+- Dagger-Hilt
+- Kotlin Serialization
+- Retrofit
+- Ktor
+- MongoDB
+- Heroku
 
